@@ -16,3 +16,46 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  width: 1128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
