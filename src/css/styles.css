@@ -1,24 +1,25 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
 /* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
+
 
 /* Sections style */
 @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
 
-a {
-  text-decoration: none;
+
+main {
+  flex-grow: 0;
+}
+
+.main-title {
+  text-align: left;
+  margin-bottom: 32px;
+}
+.back-link {
+  margin-left: 0;
 }
 
 h1,
@@ -45,17 +46,178 @@ img {
   display: block;
 }
 
-button {
-  margin: 0;
-  border: 0;
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+  display: block;
+  margin: 32px;
 }
 
-body {
-  height: 100vh;
-  width: 1128px;
+a:hover,
+a:focus {
+  color: #4e75ff;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  width: 272px;
+  padding: 8px 16px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+input:hover {
+  border: 1px solid #000;
+}
+
+input:active {
+  border: 1 px solid #4e75ff;
+}
+
+button:disabled[type='button'] {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #cfcfcf;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #989898;
+}
+
+button[type='button'] {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  display: inline-block;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:not(:disabled):hover[type='button'] {
+  background-color: #6c8cff;
+}
+
+.timer {
+  width: 346px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
 }
 
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+}
+
+.form {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin: 0 auto;
+  width: 360px;
+}
+
+input[name='delay'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: 326px;
+}
+
+input:hover[name='delay'] {
+  border: 1px solid #000;
+}
+
+input:active[name='delay'] {
+  border: 1px solid #4e75ff;
+}
+
+fieldset {
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 332px;
+  margin: 0;
+}
+
+fieldset:hover {
+  border: 1px solid #000;
+}
+
+input[name='state'] {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+  margin-left: 36px;
+}
+
+input:hover[name='state'] {
+  border: 1px solid #000;
+}
+
+button[type='submit'] {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  margin-top: 24px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+button:hover[type='submit'] {
+  background-color: #6c8cff;
+}
 
