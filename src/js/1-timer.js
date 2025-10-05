@@ -11,6 +11,7 @@ const startButton = document.querySelector('[data-start]');
 startButton.disabled = true;
 
 const dateInput = document.querySelector('#datetime-picker');
+
 const daysEl = document.querySelector('[data-days]');
 const hoursEl = document.querySelector('[data-hours]');
 const minutesEl = document.querySelector('[data-minutes]');
