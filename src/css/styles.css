@@ -17,6 +17,7 @@ main {
 .main-title {
   text-align: left;
   margin-bottom: 32px;
+  margin-left: 16px;
 }
 .back-link {
   margin-left: 0;
@@ -160,6 +161,7 @@ button:not(:disabled):hover[type='button'] {
   color: #2e2f42;
   margin: 0 auto;
   width: 360px;
+  margin-left: 8px;
 }
 
 input[name='delay'] {
@@ -220,4 +222,6 @@ button[type='submit'] {
 button:hover[type='submit'] {
   background-color: #6c8cff;
 }
-
+.back-link {
+  margin-left: 24px;
+}
